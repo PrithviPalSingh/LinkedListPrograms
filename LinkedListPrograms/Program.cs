@@ -13,6 +13,10 @@ namespace LinkedListPrograms
 
         }
 
+        /// <summary>
+        /// Traverse and print a linked list
+        /// </summary>
+        /// <param name="head"></param>
         public static void Print(Node head)
         {
             Node curr = head;
@@ -23,6 +27,10 @@ namespace LinkedListPrograms
             }
         }
 
+        /// <summary>
+        /// Reverse print a linked list
+        /// </summary>
+        /// <param name="head"></param>
         public static void ReversePrint(Node head)
         {
             if (head == null)
@@ -34,6 +42,12 @@ namespace LinkedListPrograms
             Console.WriteLine(head.Data);
         }
 
+        /// <summary>
+        /// Insert to end of a linked list
+        /// </summary>
+        /// <param name="head"></param>
+        /// <param name="x"></param>
+        /// <returns></returns>
         public static Node Insert(Node head, int x)
         {
             Node curr = head;
@@ -50,6 +64,12 @@ namespace LinkedListPrograms
 
         }
 
+        /// <summary>
+        /// Insert element at start
+        /// </summary>
+        /// <param name="head"></param>
+        /// <param name="x"></param>
+        /// <returns></returns>
         public static Node InsertBeforeHead(Node head, int x)
         {
             Node node1 = new Node();
@@ -58,6 +78,13 @@ namespace LinkedListPrograms
             return node1;
         }
 
+        /// <summary>
+        /// Insret at Nth position
+        /// </summary>
+        /// <param name="head"></param>
+        /// <param name="data"></param>
+        /// <param name="position"></param>
+        /// <returns></returns>
         public static Node InsertNth(Node head, int data, int position)
         {
             Node curr = head;
@@ -94,7 +121,12 @@ namespace LinkedListPrograms
             return head;
         }
 
-
+        /// <summary>
+        /// Delete a note at paticular location
+        /// </summary>
+        /// <param name="head"></param>
+        /// <param name="position"></param>
+        /// <returns></returns>
         public static Node Delete(Node head, int position)
         {
             Node curr = head;
@@ -128,6 +160,11 @@ namespace LinkedListPrograms
             return head;
         }
 
+        /// <summary>
+        /// Reverse a linked list
+        /// </summary>
+        /// <param name="head"></param>
+        /// <returns></returns>
         public static Node Reverse(Node head)
         {
             Node curr = head;
@@ -146,6 +183,12 @@ namespace LinkedListPrograms
             return head;
         }
 
+        /// <summary>
+        /// Compare two linked list
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns></returns>
         public static int CompareLists(Node a, Node b)
         {
             // This is a "method-only" submission.
@@ -177,6 +220,12 @@ namespace LinkedListPrograms
             return 0;
         }
 
+        /// <summary>
+        /// Merge to sorted linked list
+        /// </summary>
+        /// <param name="headA"></param>
+        /// <param name="headB"></param>
+        /// <returns></returns>
         public static Node MergeLists(Node headA, Node headB)
         {
             // This is a "method-only" submission.
@@ -237,6 +286,12 @@ namespace LinkedListPrograms
 
         }
 
+        /// <summary>
+        /// Find nth item from tail
+        /// </summary>
+        /// <param name="head"></param>
+        /// <param name="positionFromTail"></param>
+        /// <returns></returns>
         public static int GetNode(Node head, int positionFromTail)
         {
             // This is a "method-only" submission.
